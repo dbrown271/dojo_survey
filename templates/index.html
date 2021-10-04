@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Default</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .container {
+            margin: 0 auto;
+            width: 360px;
+            background-color: rgb(84, 84, 84);
+            padding: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        
+        <h2 clas>Dojo Survive</h2>
+        
+        <form action="/survey" method="POST">
+            <div class="form-group">
+                <label for="full_name">Enter Full Name</label>
+                <input type="text" name = "full_name" placeholder="Full Name">
+            </div>
+            <div class="form-group">
+                <label for="dojo_location">Dojo Locations:</label>
+                <select class="form-control" name ="dojo_location">
+                    <option>--Select A Location--</option>
+                    <option>Chicago</option>
+                    <option>Seattle</option>
+                    <option>Online</option>
+                    <option>Burbank</option>
+                    <option>Bellvue</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="favorite_language">Favorite Language:</label>
+                <select class="form-control" name ="favorite_language">
+                    <option>--Select A Language--</option>
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>Python</option>
+                    <option>JavaScript</option>
+                    <option>C##</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comment1">Comments:</label>
+                <textarea class="form-control" name ="comment1" rows="6"></textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-warning" type="submit" value="Go To The Next Page!">Submit</button>
+            </div>
+        </form>
+
+
+    </div>
+</body>
+
+</html>
